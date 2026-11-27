@@ -1,4 +1,4 @@
-### Wearable Motion Tracker
+## Wearable Motion Tracker
 
 A compact, battery-powered custom PCB designed in **KiCad** for wearable motion and barometric sensing, built around the **ESP32-C3** wireless microcontroller with integrated USB Type-C Li-Po charging and 3.3V power regulation.
 
