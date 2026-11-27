@@ -5,9 +5,9 @@ A compact, battery-powered custom PCB designed in **KiCad** for wearable motion 
 ## Visuals
 
 
+<img width="1917" height="1023" alt="Screenshot 2026-11-26 233503" src="https://github.com/user-attachments/assets/99919c50-1a4b-4af4-b7a5-7649ee241192" />
 <img width="1916" height="1017" alt="Screenshot 2026-11-26 233524" src="https://github.com/user-attachments/assets/eb396ccf-4c68-4c99-960d-cf063d25f510" />
 <img width="1527" height="982" alt="Screenshot 2026-11-26 224522" src="https://github.com/user-attachments/assets/2f0bef45-cb2a-4d03-8e29-301d9b18600d" />
-<img width="1917" height="1023" alt="Screenshot 2026-11-26 233503" src="https://github.com/user-attachments/assets/99919c50-1a4b-4af4-b7a5-7649ee241192" />
 
 
 ## Hardware Architecture
@@ -21,17 +21,10 @@ A compact, battery-powered custom PCB designed in **KiCad** for wearable motion 
   * Onboard battery cell connector (`BT1`) and physical power switch (`SW1`)
 * **Voltage Regulation (`U5` — ME6211C33M5):** Steps down battery/input voltage to a regulated `3.3V` rail for the MCU and sensors with local decoupling capacitors (`C2`, `C3`, `C4`, `C6`).
 
-## Repository Contents
+## Conclusion
 
-* `Wearable_Motion_Tracker.kicad_pro` & `Wearable_Motion_Tracker.kicad_prl` — KiCad project and local workspace configuration
-* `Wearable_Motion_Tracker.kicad_sch` — Schematic design
-* `Wearable_Motion_Tracker.kicad_pcb` — 2D PCB layout and routing
-* `Wearable_Motion_Tracker-NPTH.drl` & `Wearable_Motion_Tracker-PTH.drl` — Non-plated and plated through-hole drill files
-* `Wearable_Motion_Tracker.dsn` & `Wearable_Motion_Tracker.cmp` — Design and component files
-
-## Hardware Bring-Up Checklist
-
-* [ ] Resolve all remaining unrouted ratsnest airwires (`Unrouted: 0`) and run DRC/ERC in KiCad with zero errors
-* [ ] Verify USB Type-C charging current and `TP4056` status behavior on a single-cell Li-Po battery
-* [ ] Confirm stable `3.3V` output from the `ME6211C33M5` regulator before powering the sensors
-* [ ] Scan the I2C bus in firmware to verify `MPU-6050` and `BMP280` communication
+This project demonstrates the design and development of a wearable motion tracking PCB using ESP32
+C3, MPU6050, and BMP280 sensors. The system is capable of tracking motion and vertical movement 
+while maintaining compact size and low power operation suitable for wearable applications. The project 
+also demonstrates embedded hardware design, sensor integration, battery management, and PCB 
+development workflow.
